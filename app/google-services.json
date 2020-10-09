@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "935746552989",
+    "firebase_url": "https://earthunited-17491.firebaseio.com",
+    "project_id": "earthunited-17491",
+    "storage_bucket": "earthunited-17491.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935746552989:android:ef7831a99d5defb1060074",
+        "android_client_info": {
+          "package_name": "com.example.earthunited_v001"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935746552989-mjn2858id6bd5vovq9v904v2sp6k5dpi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDdcGUM2yO0aQGPtoYPTODHSnbGUia3Go"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935746552989-mjn2858id6bd5vovq9v904v2sp6k5dpi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

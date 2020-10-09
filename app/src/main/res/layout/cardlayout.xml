@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:elevation="100dp"
+        android:paddingTop="1000dp"
+        app:cardCornerRadius="10dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/mapmarkerhomepage" />
+
+            <TextView
+                android:id="@+id/txttop2"
+                android:layout_width="149dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/assistant"
+                android:text="CANADA"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:typeface="normal"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtGoal2"
+                android:layout_width="68dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/assistant"
+                android:text="GOAL"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"
+                android:typeface="normal"
+                app:layout_constraintBottom_toTopOf="@+id/progBar2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.787" />
+
+            <TextView
+                android:id="@+id/txtGoal3"
+                android:layout_width="68dp"
+                android:layout_height="28dp"
+                android:fontFamily="@font/assistant"
+                android:text="100K"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:typeface="normal"
+                app:layout_constraintEnd_toEndOf="@+id/txtGoal2"
+                app:layout_constraintTop_toBottomOf="@+id/progBar2" />
+
+            <ProgressBar
+                android:id="@+id/progBar2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="346dp"
+                android:layout_height="22dp"
+
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="64dp"
+                android:elevation="10dp"
+                android:foregroundGravity="left"
+                android:progress="20"
+                android:progressTint="#037CFE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/txtGoal2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="49dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/assistant"
+                android:text="85k"
+                android:textAlignment="textStart"
+                android:textColor="#037CFE"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"
+                android:typeface="normal"
+                app:layout_constraintStart_toStartOf="@+id/progBar2"
+                app:layout_constraintTop_toBottomOf="@+id/progBar2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

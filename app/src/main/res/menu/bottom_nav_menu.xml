@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+  <!--  <ImageButton
+        android:id="@+id/searchImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/chat_button" />-->
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_explore_24px"
+        android:textSize="0sp"
+        android:title="@string/title_map" />
+
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/homebutton2test"
+        android:textSize="0sp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/ic_message_24px"
+        android:iconTintMode="src_over"
+        android:textSize="0sp"
+        android:title="@string/title_chat" />
+
+</menu>

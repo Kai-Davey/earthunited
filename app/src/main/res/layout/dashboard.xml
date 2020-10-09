@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/idScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+            <!--android:background="#fff"-->
+<!--
+            android:outlineSpotShadowColor="#C8C8C8"
+            android:outlineAmbientShadowColor="#C8C8C8"-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="30dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:srcCompat="@drawable/logo_horizontal" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/assistant"
+                android:text="Bulletin Board"
+                android:textAlignment="center"
+                android:textColor="#686868"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <VideoView
+                        android:id="@+id/videoView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        />
+                       <!-- android:layout_gravity="fill_horizontal|fill_vertical"-->
+                       <!-- android:foregroundGravity="fill_horizontal|fill_vertical|fill"-->
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imgbtnPause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/ic_media_pause" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtnPlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="8dp"
+                android:paddingTop="1000dp"
+                android:paddingLeft="1000dp"
+                app:contentPadding="@dimen/cardview_default_elevation"
+                app:cardMaxElevation="0.0dp"
+                app:cardCornerRadius="8dp">
+                <TextView
+                    android:id="@+id/txtContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/assistant"
+                    android:text="This Section will be used to have a write up with a responsive text box that will be used to describe the videos above."
+                    android:textAlignment="textStart"
+                    android:textColor="#686868"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:typeface="normal" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/assistant"
+                android:text="Global Target Goal"
+                android:textAlignment="center"
+                android:textColor="#686868"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_margin="10dp"
+                app:cardElevation="8dp"
+                android:paddingTop="10dp"
+                app:cardCornerRadius="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/container3dlook">
+
+                    <TextView
+                        android:id="@+id/txtAverage"
+                        android:layout_width="180dp"
+                        android:layout_height="31dp"
+                        android:layout_marginTop="16dp"
+
+                        android:fontFamily="@font/assistant"
+                        android:text="Almost There"
+                        android:textAlignment="textStart"
+                        android:textColor="#686868"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        android:typeface="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.075"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="273dp"
+                        android:layout_height="16dp"
+                        android:layout_marginBottom="24dp"
+                        android:elevation="10dp"
+
+                        android:foregroundGravity="left"
+                        android:progressTint="#037CFE"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/txtAverage"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/txtAverage" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/assistant"
+                        android:text="73%"
+                        android:textAlignment="textStart"
+                        android:textColor="#037CFE"
+                        android:textSize="30sp"
+                        android:textStyle="normal|bold"
+                        android:typeface="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/txtAverage"
+                        app:layout_constraintHorizontal_bias="0.126"
+                        app:layout_constraintStart_toEndOf="@+id/progressBar" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp"
+                android:elevation="8dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/container3dlook"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/mapmarkerhomepage" />
+
+                        <TextView
+                            android:id="@+id/txttop1"
+                            android:layout_width="149dp"
+                            android:layout_height="30dp"
+
+                            android:layout_gravity="start|fill_horizontal|left"
+                            android:fontFamily="@font/assistant"
+                            android:text="U.S.A"
+                            android:textAlignment="textStart"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            android:typeface="normal" />
+
+                        <TextView
+                            android:id="@+id/txtGoal1"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_gravity="right|fill_horizontal|end"
+                            android:fontFamily="@font/assistant"
+                            android:text="GOAL"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal|bold"
+                            android:typeface="normal" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/bartop1"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="346dp"
+                        android:layout_height="30dp"
+
+                        android:foregroundGravity="left"
+                        android:progressTint="#037CFE" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/counttop1"
+                            android:layout_width="49dp"
+                            android:layout_height="29dp"
+                            android:fontFamily="@font/assistant"
+                            android:gravity="start|fill"
+                            android:text="85k"
+                            android:textAlignment="textStart"
+                            android:textColor="#037CFE"
+                            android:textSize="20sp"
+                            android:textStyle="normal|bold"
+                            android:typeface="normal" />
+
+                        <TextView
+                            android:id="@+id/txtGoal"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:fontFamily="@font/assistant"
+                            android:gravity="right|fill_horizontal|end"
+                            android:text="100K"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            android:typeface="normal" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/mapmarkerhomepage" />
+
+                        <TextView
+                            android:id="@+id/txttop2"
+                            android:layout_width="149dp"
+                            android:layout_height="30dp"
+
+                            android:layout_gravity="start|fill_horizontal|left"
+                            android:fontFamily="@font/assistant"
+                            android:text="U.S.A"
+                            android:textAlignment="textStart"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            android:typeface="normal" />
+
+                        <TextView
+                            android:id="@+id/txtGoaltop2"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_gravity="right|fill_horizontal|end"
+                            android:fontFamily="@font/assistant"
+                            android:text="GOAL"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal|bold"
+                            android:typeface="normal" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/bartop2"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="346dp"
+                        android:layout_height="30dp"
+
+                        android:foregroundGravity="left"
+                        android:progressTint="#037CFE" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/counttop2"
+                            android:layout_width="49dp"
+                            android:layout_height="29dp"
+                            android:fontFamily="@font/assistant"
+                            android:gravity="start|fill"
+                            android:text="85k"
+                            android:textAlignment="textStart"
+                            android:textColor="#037CFE"
+                            android:textSize="20sp"
+                            android:textStyle="normal|bold"
+                            android:typeface="normal" />
+
+                        <TextView
+                            android:id="@+id/txtGoal2"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:fontFamily="@font/assistant"
+                            android:gravity="right|fill_horizontal|end"
+                            android:text="100K"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            android:typeface="normal" />
+
+                    </LinearLayout>
+
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/mapmarkerhomepage" />
+
+                        <TextView
+                            android:id="@+id/txttop3"
+                            android:layout_width="149dp"
+                            android:layout_height="30dp"
+
+                            android:layout_gravity="start|fill_horizontal|left"
+                            android:fontFamily="@font/assistant"
+                            android:text="U.S.A"
+                            android:textAlignment="textStart"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            android:typeface="normal" />
+
+                        <TextView
+                            android:id="@+id/txtGoal3"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_gravity="right|fill_horizontal|end"
+                            android:fontFamily="@font/assistant"
+                            android:text="GOAL"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal|bold"
+                            android:typeface="normal" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/bartop3"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="346dp"
+                        android:layout_height="30dp"
+
+                        android:foregroundGravity="left"
+                        android:progressTint="#037CFE" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/counttop3"
+                            android:layout_width="49dp"
+                            android:layout_height="29dp"
+                            android:fontFamily="@font/assistant"
+                            android:gravity="start|fill"
+                            android:text="85k"
+                            android:textAlignment="textStart"
+                            android:textColor="#037CFE"
+                            android:textSize="20sp"
+                            android:textStyle="normal|bold"
+                            android:typeface="normal" />
+
+                        <TextView
+                            android:id="@+id/txtGoaltop3"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:fontFamily="@font/assistant"
+                            android:gravity="right|fill_horizontal|end"
+                            android:text="100K"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            android:typeface="normal" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+
+                    <Button
+                        android:id="@+id/btnGlobalTargeSeeAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#2CBFCD"
+                        android:focusable="auto"
+                        android:text="See All"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/LatestPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/assistant"
+                android:text="Latest Communication"
+                android:textAlignment="center"
+                android:textColor="#686868"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/LatestPostBlog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/assistant"
+                android:text="Please keep a lookout for our latest communications."
+                android:textAlignment="center"
+                android:textColor="#686868"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:typeface="normal" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+
